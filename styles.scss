@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  position: relative;
+  background-color: hsl(210, 60%, 98%);
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 700px;
+  height: 100%;
+  background-color: #f3f3f3;
+  padding: 20px;
+  margin: 70px 0;
+}
+
+.notificationSect {
+  display: flex;
+  justify-content: space-between;
+
+  > p:hover {
+    cursor: pointer;
+    color: hsl(219, 85%, 26%);
+    transition: all 0.5s;
+  }
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+.No3 {
+  background-color: hsl(219, 85%, 26%);
+  border-radius: 5px;
+  margin-left: 5px;
+  color: #f3f3f3;
+  text-align: center;
+  height: 22px;
+  width: 25px;
+}
+
+.message__Container {
+  display: flex;
+  align-items: center;
+  background-color: hsl(211, 68%, 94%);
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+figcaption {
+  width: 40px;
+
+  > img {
+    width: 100%;
+  }
+}
+
+.message {
+  padding-left: 20px;
+
+  > p {
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+span {
+  font-weight: bold;
+}
+
+legend {
+  padding: 0 5px;
+  color: hsl(219, 14%, 63%);
+  font-size: 15px;
+}
+
+cite {
+  font-weight: bold;
+  color: hsl(219, 12%, 42%);
+  font-style: normal;
+}
+
+span:hover,
+cite:hover {
+  cursor: pointer;
+  color: hsl(219, 85%, 26%);
+  transition: all 0.5s;
+}
+
+.unread_Color {
+  background-color: red;
+  padding: 2px;
+  width: 2px;
+  border-radius: 100%;
+  margin-left: 5px;
+}
+
+#time {
+  color: hsl(219, 14%, 63%);
+  font-size: 14px;
+}
+
+.chessColor {
+  color: hsl(219, 85%, 26%);
+}
+
+.no_Message {
+  background-color: #f3f3f3;
+  display: grid;
+  grid-template-areas:
+    "pic content"
+    "unknown content2";
+
+  > figcaption {
+    grid-area: pic;
+  }
+
+  > .message {
+    grid-area: content;
+  }
+
+  > .messageReceived {
+    grid-area: content2;
+    margin-left: 20px;
+    color: hsl(219, 14%, 63%);
+    border: 1px solid hsl(219, 14%, 63%);
+    padding: 20px;
+    transition: all 0.5s;
+  }
+}
+
+.messageReceived:hover {
+  background-color: hsl(211, 68%, 94%);
+  border: none;
+}
+
+.no_Message2 {
+  background-color: #f3f3f3;
+  position: relative;
+}
+
+.chessImage {
+  position: absolute;
+  right: 12px;
+  top: 15px;
+}
+
+/* footer */
+footer {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-size: 14px;
+}

@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  position: relative;
+  background-color: #f7fafd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main {
+  width: 700px;
+  height: 100%;
+  background-color: #f3f3f3;
+  padding: 20px;
+  margin: 70px 0;
+}
+
+.notificationSect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.notificationSect > p:hover {
+  cursor: pointer;
+  color: #0a317b;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.notification {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+.No3 {
+  background-color: #0a317b;
+  border-radius: 5px;
+  margin-left: 5px;
+  color: #f3f3f3;
+  text-align: center;
+  height: 22px;
+  width: 25px;
+}
+
+.message__Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e5effa;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+figcaption {
+  width: 40px;
+}
+
+figcaption > img {
+  width: 100%;
+}
+
+.message {
+  padding-left: 20px;
+}
+
+.message > p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+span {
+  font-weight: bold;
+}
+
+legend {
+  padding: 0 5px;
+  color: #939dae;
+  font-size: 15px;
+}
+
+cite {
+  font-weight: bold;
+  color: #5e6778;
+  font-style: normal;
+}
+
+span:hover,
+cite:hover {
+  cursor: pointer;
+  color: #0a317b;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.unread_Color {
+  background-color: red;
+  padding: 2px;
+  width: 2px;
+  border-radius: 100%;
+  margin-left: 5px;
+}
+
+#time {
+  color: #939dae;
+  font-size: 14px;
+}
+
+.chessColor {
+  color: #0a317b;
+}
+
+.no_Message {
+  background-color: #f3f3f3;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "pic content" "unknown content2";
+}
+
+.no_Message > figcaption {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: pic;
+}
+
+.no_Message > .message {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: content;
+}
+
+.no_Message > .messageReceived {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: content2;
+  margin-left: 20px;
+  color: #939dae;
+  border: 1px solid #939dae;
+  padding: 20px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.messageReceived:hover {
+  background-color: #e5effa;
+  border: none;
+}
+
+.no_Message2 {
+  background-color: #f3f3f3;
+  position: relative;
+}
+
+.chessImage {
+  position: absolute;
+  right: 12px;
+  top: 15px;
+}
+
+/* footer */
+footer {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=styles.css.map */
