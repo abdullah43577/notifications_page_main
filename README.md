@@ -11,8 +11,6 @@ This is a solution to the [Notifications page challenge on Frontend Mentor](http
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -28,7 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![screenshot1](./design/Screenshot_14.png)
+![screenshot1](./design/Screenshot_15.png)
 
 ### Links
 
@@ -48,30 +47,79 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I discovered how to use SCSS, I beginning to love it. I wished it doesn't require any compiler to make this work. It took me some time to get the compiler to run the code as I wasn't familiar with it yet very well. But now everything comes relatively easy
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+Some few examples of the codes written with SCSS / Sass syntax are:
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.no_Message {
+  background-color: #f3f3f3;
+  display: grid;
+  grid-template-areas:
+    "pic content"
+    "unknown content2";
+
+  > figcaption {
+    grid-area: pic;
+  }
+
+  > .message {
+    grid-area: content;
+  }
+
+  > .messageReceived {
+    grid-area: content2;
+    margin-left: 20px;
+    color: hsl(219, 14%, 63%);
+    border: 1px solid hsl(219, 14%, 63%);
+    padding: 20px;
+    transition: all 0.5s;
+  }
 }
+
+Normally I'd have to write:
+
+.no_Message {
+  background-color: #f3f3f3;
+  display: grid;
+  grid-template-areas:
+    "pic content"
+    "unknown content2";
+}
+
+  .no_Message > figcaption {
+    grid-area: pic;
+  }
+
+  .no_Message > .message {
+    grid-area: content;
+  }
+
+  .no_Message > .messageReceived {
+    grid-area: content2;
+    margin-left: 20px;
+    color: hsl(219, 14%, 63%);
+    border: 1px solid hsl(219, 14%, 63%);
+    padding: 20px;
+    transition: all 0.5s;
+  }
 ```
 
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
+I also used the disabled property I did learn from one of my previous projects
+
+"use strict";
+const boxes = document.querySelectorAll(".message__Container");
+
+const toggleAllRead = () => {
+  boxes.forEach((box) => {
+    box.style.backgroundColor = "#f3f3f3";
+  });
+  document.querySelector(".No3").textContent = "0";
+  document.querySelector(".notificationSect > button").disabled = true;
+  document.querySelector(".notificationSect > button").style.color = "gray";
 };
 ```
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ## Author
 

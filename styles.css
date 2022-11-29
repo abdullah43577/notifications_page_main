@@ -28,6 +28,11 @@ main {
   margin: 70px 0;
 }
 
+button {
+  border: none;
+  font-size: 14px;
+}
+
 .notificationSect {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,7 +42,7 @@ main {
           justify-content: space-between;
 }
 
-.notificationSect > p:hover {
+.notificationSect > button:hover {
   cursor: pointer;
   color: #0a317b;
   -webkit-transition: all 0.5s;
@@ -53,11 +58,11 @@ main {
           align-items: center;
 }
 
-h4 {
+.notification h4 {
   font-size: 18px;
 }
 
-.No3 {
+.notification .No3 {
   background-color: #0a317b;
   border-radius: 5px;
   margin-left: 5px;
@@ -198,5 +203,23 @@ footer {
   left: 20px;
   bottom: 20px;
   font-size: 14px;
+}
+
+@media (max-width: 685px) {
+  main {
+    width: 600px;
+  }
+  .message > p {
+    font-size: 12px;
+  }
+  .messageReceived {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 550px) {
+  main {
+    width: 450px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
